@@ -127,7 +127,10 @@ function BrainObjects({
       structureIds: memberships.get(sourceId) ?? [],
     }))
   }, [brain])
-  const urls = useMemo(() => parts.map(({ sourceId }) => `/models/bodyparts3d/${sourceId}.obj`), [parts])
+  const urls = useMemo(
+    () => parts.map(({ sourceId }) => `${import.meta.env.BASE_URL}models/bodyparts3d/${sourceId}.obj`),
+    [parts],
+  )
   const objects = useLoader(OBJLoader, urls)
   useEffect(() => onReady(), [objects, onReady])
 

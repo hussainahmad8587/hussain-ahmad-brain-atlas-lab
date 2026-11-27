@@ -51,10 +51,10 @@ The downloaded OBJ meshes are adapted only for grouping, centering, display mate
 
 ## Publish the app and docs from one repository
 
-This repository keeps the interactive app at its root and the Mintlify documentation site in [`mintlify/`](mintlify/). Connect this same GitHub repository to both hosting services:
+This repository keeps the interactive app at its root and the Mintlify documentation site in [`mintlify/`](mintlify/).
 
-1. **Mintlify:** select this repository and the production branch in Git Settings. Enable **docs.json is in a subdirectory** and set the directory to `/mintlify`. Mintlify builds the documentation from that folder when changes land on the connected branch.
-2. **App host:** connect the same repository to Cloudflare Pages or Vercel. Use `npm run build` as the build command and `dist` as the output directory. The app is built from the repository root.
-3. **Link the sites:** after both deployments have their public URLs, add the app URL to the Mintlify navigation and the docs URL to the app. Separate subdomains such as `atlas.example.com` and `docs.example.com` keep the 3D viewer and its learning material easy to find.
+1. **Mintlify:** the docs site is connected to this repository's `main` branch and the `/mintlify` folder.
+2. **3D viewer:** `.github/workflows/deploy-pages.yml` builds the app and deploys `dist` to GitHub Pages whenever `main` changes. The Vite base path and mesh URLs are configured for the repository's Pages URL.
+3. **Open the atlas:** [launch the interactive Brain Atlas Lab](https://hussainahmad8587.github.io/hussain-ahmad-brain-atlas-lab/). The Mintlify home page embeds this viewer and also links to it directly.
 
-The Mintlify site includes a short learning guide and the mesh attribution record. The longer development checklist and technical asset verification remain in [`docs/`](docs/).
+The Mintlify site includes the interactive viewer, a short learning guide, and the mesh attribution record. The longer development checklist and technical asset verification remain in [`docs/`](docs/).

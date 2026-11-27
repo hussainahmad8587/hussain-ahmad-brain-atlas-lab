@@ -1,0 +1,22 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Brain Atlas Lab",
+  "colors": {
+    "primary": "#b96f50",
+    "light": "#f5f3ec",
+    "dark": "#173b35"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Learn",
+        "pages": ["index", "learning-guide"]
+      },
+      {
+        "group": "Project",
+        "pages": ["anatomy-assets"]
+      }
+    ]
+  }
+}

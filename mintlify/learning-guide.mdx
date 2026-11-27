@@ -1,0 +1,38 @@
+---
+title: Learning guide
+description: Use the Brain Atlas Lab viewer to explore anatomy and understand its interactions.
+---
+
+# Learning guide
+
+## A short first session
+
+1. Start with **Whole brain** and notice the two cerebral hemispheres, cerebellum, and brainstem.
+2. Drag the model to rotate it. Use the mouse wheel or a two-finger pinch to zoom.
+3. Choose **Hippocampus** in the Atlas Index. The selected structure is highlighted, and its notes appear in the structure panel. You can also click a mapped part of the model to select it.
+4. Move **Dissection** to fade surrounding anatomy and expose deeper structures.
+5. Use **Reset** to return to the initial whole-brain view.
+
+## Viewer controls
+
+| Control | What it does |
+| --- | --- |
+| Drag or touch drag | Rotate the model |
+| Wheel or pinch | Zoom in and out |
+| Atlas Index | Select a structure and focus its mapped mesh parts |
+| Click a model part | Select its mapped anatomy record |
+| Dissection | Fade surrounding meshes to reveal deeper anatomy |
+| Annotate | Mark the selected structure during the current session |
+| Snapshot | Save the model canvas as a PNG image |
+| Full screen | Expand the model viewer |
+| Reset | Restore the whole-brain selection and starting camera |
+
+## What happens when you select anatomy
+
+The viewer loads OBJ meshes into a Three.js scene. Each rendered mesh carries a source identifier and an anatomy identifier. When you click the model, React Three Fiber raycasts against the meshes; the hit mesh's anatomy identifier selects a record in the separate anatomy data file. That record supplies the name and learning notes shown in the information panel.
+
+The dissection slider adjusts the opacity of surrounding meshes. The selected structure remains visible and highlighted so its position can be compared with nearby anatomy.
+
+## Accessibility and interaction
+
+Use the structure list and controls with a keyboard as well as a pointer. On touch screens, drag to rotate and pinch to zoom. If the model is still loading, wait for the ready state; if an asset fails, use the viewer's retry control and check that the model asset folder was included in the app deployment.

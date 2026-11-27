@@ -1,0 +1,19 @@
+{
+  "source": "BodyParts3D 4.0 PART-OF OBJ 99%",
+  "brainMeshCount": 57,
+  "hippocampusMeshCount": 2,
+  "brainBounds": {
+    "max": [68.8934, 10.3293, 1630.46],
+    "min": [-69.9404, -169.677, 1464.5]
+  },
+  "hippocampusBounds": {
+    "max": [36.6013, -59.4461, 1551.24],
+    "min": [-37.9061, -102.368, 1529.25]
+  },
+  "hippocampusInsideBrainBounds": true,
+  "pituitaryBounds": {
+    "max": [5.51969, -101.105, 1535.54],
+    "min": [-6.7911, -110.563, 1522.57]
+  },
+  "pituitaryInsideBrainBounds": true
+}

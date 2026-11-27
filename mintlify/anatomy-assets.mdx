@@ -1,0 +1,22 @@
+---
+title: Anatomy meshes and attribution
+description: Learn where the 3D anatomy comes from and how it is licensed.
+---
+
+# Anatomy meshes and attribution
+
+## Source and license
+
+Brain Atlas Lab uses meshes from the [BodyParts3D 4.0 archive](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html), PART-OF OBJ set at 99% polygon reduction. The Database Center for Life Science licenses BodyParts3D under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
+
+Required attribution:
+
+> BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.
+
+The app adapts the downloaded geometry for grouping, centering, display materials, and interaction. Its educational descriptions are original summaries.
+
+## Coordinate space and coverage
+
+The app uses 57 brain components, two hippocampus meshes, and one pituitary mesh from the source set. The asset record documents the measured coordinate-space check and source identifiers. Brainstem, cerebellum, hypothalamus, hemisphere, lobe, prefrontal, and ventricular selections group verified components from the brain compound; overlapping groupings reuse loaded meshes.
+
+Some named regions are therefore educational groupings rather than isolated source meshes. The repository's `docs/` folder holds the detailed source inventory, coordinate-space check, reference comparison, and known gaps.

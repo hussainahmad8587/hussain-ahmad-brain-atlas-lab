@@ -53,7 +53,7 @@ The downloaded OBJ meshes are adapted only for grouping, centering, display mate
 
 This repository keeps the interactive app at its root and the Mintlify documentation site in [`mintlify/`](mintlify/).
 
-1. **Mintlify:** the docs site is connected to this repository's `main` branch and the `/mintlify` folder.
+1. **Mintlify:** the docs site is connected to this repository's `main` branch and the `/mintlify` folder. [Open the live Brain Atlas Lab Mintlify site](https://hussain-ahmad-brain-atlas-lab.mintlify.site/).
 2. **3D viewer:** `.github/workflows/deploy-pages.yml` builds the app and deploys `dist` to GitHub Pages whenever `main` changes. The Vite base path and mesh URLs are configured for the repository's Pages URL.
 3. **Open the atlas:** [launch the interactive Brain Atlas Lab](https://hussainahmad8587.github.io/hussain-ahmad-brain-atlas-lab/). The Mintlify home page embeds this viewer and also links to it directly.
 
